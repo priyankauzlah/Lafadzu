@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvAppLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:text="@string/txt_doa_lable"
+        android:textColor="@color/brown_darker"
+        android:textSize="@dimen/_32sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vpArtikel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200dp"
+                android:layout_margin="@dimen/_16dp" />
+
+            <LinearLayout
+                android:id="@+id/llSlider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_16dp"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_main_menu"
+                android:orientation="vertical"
+                android:padding="@dimen/_16dp">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kumpulan_doa_dan_dzikir_sehari_hari"
+                    android:textColor="@color/brown_darker"
+                    android:textSize="@dimen/_18sp"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/llDzikirDoaShalat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:background="@drawable/bg_item"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_16dp">
+
+                    <ImageView
+                        android:id="@+id/ivDoa"
+                        android:layout_width="@dimen/_75dp"
+                        android:layout_height="@dimen/_75dp"
+                        android:contentDescription="@string/imageview"
+                        android:src="@drawable/mat" />
+
+                    <TextView
+                        android:id="@+id/tvFirstRow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:text="@string/txt_first_row"
+                        android:textColor="@color/brown_darker"
+                        android:textSize="@dimen/_18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llDzikirSetiapSaat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:background="@drawable/bg_item"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_16dp">
+
+                    <ImageView
+                        android:id="@+id/ivDzikirSetiapSaat"
+                        android:layout_width="@dimen/_75dp"
+                        android:layout_height="@dimen/_75dp"
+                        android:contentDescription="@string/imageview"
+                        android:src="@drawable/mosque" />
+
+                    <TextView
+                        android:id="@+id/tvDzikirSetiapSaat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:text="@string/txt_DzikirSetiapSaat"
+                        android:textColor="@color/brown_darker"
+                        android:textSize="@dimen/_18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llDzikirDoaHarian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:background="@drawable/bg_item"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_16dp">
+
+                    <ImageView
+                        android:id="@+id/ivDzikirDoaHarian"
+                        android:layout_width="@dimen/_75dp"
+                        android:layout_height="@dimen/_75dp"
+                        android:contentDescription="@string/imageview"
+                        android:src="@drawable/prayer" />
+
+                    <TextView
+                        android:id="@+id/tvDzikirDoaHarian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:text="@string/dzikir_doa_harian"
+                        android:textColor="@color/brown_darker"
+                        android:textSize="@dimen/_18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llDzikirPagiPetang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:background="@drawable/bg_item"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_16dp">
+
+                    <ImageView
+                        android:id="@+id/ivDzikirPagiPetang"
+                        android:layout_width="@dimen/_75dp"
+                        android:layout_height="@dimen/_75dp"
+                        android:contentDescription="@string/imageview"
+                        android:src="@drawable/muslim" />
+
+                    <TextView
+                        android:id="@+id/tvDzikirPagiPetang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:text="@string/dzikir_pagi_petang"
+                        android:textColor="@color/brown_darker"
+                        android:textSize="@dimen/_18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
